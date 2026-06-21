@@ -1,0 +1,5 @@
+package github.com/sjqtentacles/sml-astar
+
+require {
+  github.com/sjqtentacles/sml-pqueue 1
+}
