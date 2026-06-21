@@ -1,7 +1,7 @@
 $(SML_LIB)/basis/basis.mlb
 
-../../../../../sml-pqueue/lib/github.com/sjqtentacles/sml-pqueue/pqueue.sig
-../../../../../sml-pqueue/lib/github.com/sjqtentacles/sml-pqueue/pqueue.sml
+../sml-pqueue/pqueue.sig
+../sml-pqueue/pqueue.sml
 
 astar.sig
 astar.sml
