@@ -42,11 +42,35 @@ val dists = Dijkstra.sssp
 (* => list of ((x,y), distance) for all reachable cells *)
 ```
 
+## Example
+
+`make example` builds and runs [`examples/demo.sml`](examples/demo.sml), which
+runs A* and Dijkstra over a 6x6 8-connected grid with a wall column, routing
+around the obstacle. Real path costs are printed with a forced-decimal
+formatter so the output is byte-identical on MLton and Poly/ML:
+
+```
+$ make example
+A* and Dijkstra on a 6x6 8-connected grid (wall column x=3, rows 0..4):
+
+A* path (0,0) -> (5,5):
+  steps      = 7
+  total cost = 8.2426
+  route      = (0,0) (1,1) (2,2) (2,3) (2,4) (3,5) (4,5) (5,5)
+
+Dijkstra from (0,0):
+  reachable cells = 31
+  dist to (2,2)   = 2.8284
+  dist to (5,0)   = 12.0711
+  dist to (5,5)   = 8.2426
+```
+
 ## Testing
 
 ```
 make test       # MLton
 make test-poly  # Poly/ML
+make example    # build + run the demo
 ```
 
 ## License
