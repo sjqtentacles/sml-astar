@@ -1,5 +1,7 @@
 # sml-astar
 
+[![CI](https://github.com/sjqtentacles/sml-astar/actions/workflows/ci.yml/badge.svg)](https://github.com/sjqtentacles/sml-astar/actions/workflows/ci.yml)
+
 Generic A* and Dijkstra pathfinding with 2D grid support in pure Standard ML
 
 ## Installation
